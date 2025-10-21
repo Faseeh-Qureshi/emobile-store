@@ -1,0 +1,62 @@
+:root{
+    --bg: #f7faf9;
+    --text: #1f2937;
+    --muted: #4b5563;
+    --accent: #2563eb;
+    --max-width: 900px;
+}
+
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper{
+    max-width: var(--max-width);
+    margin: 3rem auto;
+    padding: 0 1rem;
+}
+
+/* Heading */
+h1{
+    margin: 0 0 0.5rem 0;
+    font-size: clamp(1.6rem, 2.4vw + 0.6rem, 2.8rem);
+    line-height: 1.05;
+    color: var(--accent);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    text-align: left;
+    text-rendering: optimizeLegibility;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.6);
+}
+
+/* Paragraphs */
+p{
+    margin: 0 0 1rem 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--muted);
+    text-align: left;
+}
+
+/* Slight variation for lead paragraph */
+p.lead{
+    font-size: 1.125rem;
+    color: #2d3748;
+    margin-bottom: 1.25rem;
+}
+
+/* Spacing between consecutive paragraphs */
+p + p { margin-top: 0.75rem; }
+
+/* Center content on very small screens for single-column layouts */
+@media (max-width: 480px){
+    .wrapper{ margin: 2rem 1rem; }
+    h1, p{ text-align: center; }
+}
