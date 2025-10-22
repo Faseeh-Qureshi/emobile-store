@@ -25,6 +25,7 @@ html,body{
 
 /* Heading */
 h1{
+    background-color: gray;
     margin: 0 0 0.5rem 0;
     font-size: clamp(1.6rem, 2.4vw + 0.6rem, 2.8rem);
     line-height: 1.05;
@@ -39,7 +40,7 @@ h1{
 /* Paragraphs */
 p{
     margin: 0 0 1rem 0;
-    font-size: 1rem;
+    font-size: 2rem;
     line-height: 1.6;
     color: var(--muted);
     text-align: left;
