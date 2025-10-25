@@ -25,12 +25,13 @@ html,body{
 
 /* Heading */
 h1{
-    background-color: rgb(112, 246, 246);
+    background-color: rgb(65, 81, 81);
     margin: 0 0 0.5rem 0;
     font-size: clamp(1.6rem, 2.4vw + 0.6rem, 2.8rem);
     line-height: 1.05;
     color: black;
     font-weight: 700;
+    border: #2563eb 3px solid;
     letter-spacing: -0.02em;
     text-align: left;
     text-rendering: optimizeLegibility;
